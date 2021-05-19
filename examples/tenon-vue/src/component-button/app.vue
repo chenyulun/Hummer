@@ -12,13 +12,13 @@
     <view class="demo-item">
       <text class="demo-item-title">Button With Disabled</text>
       <view class="demo-box">
-        <button class="btn" :disabled="true" :disabled-style="disabledStyle"  @tap="handleClickBtn('Button With Disabled')">Button</button>
+        <button class="btn" disabled :disabled-style="disabledStyle"  @tap="handleClickBtn('Button With Disabled')">Button</button>
       </view>
     </view>
      <view class="demo-item">
       <text class="demo-item-title">Button With PressedStyle</text>
       <view class="demo-box">
-        <button class="btn" :pressed-style="pressedStyle"  @click="handleClickBtn('Button With PressedStyle')">Button</button>
+        <button class="btn" :pressedStyle="pressedStyle"  @click="handleClickBtn('Button With PressedStyle')">Button</button>
       </view>
     </view>
   </view>
@@ -47,7 +47,8 @@ export default {
   data(){
     return {
       pressedStyle:{
-        'background-color': 'black'
+        'background-color': 'black',
+        'color': 'white'
       },
       disabledStyle: {
         'background-color': 'yellow'
